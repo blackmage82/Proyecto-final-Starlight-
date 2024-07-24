@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starlight Tienda de Video juegos</title>
+
+</head>
+<body>
+    <h1>Tienda de Video Juegos</h1>
+    <button type="submit"><a href="index.php">Inicio</a></button>
+    <button type="submit"><a href="listar.php">Listar video juegos</a></button>
+    <button type="submit"><a href="agregar.html">Agregar video juegos</a></button>
+    <h2>Agregar videos juegos</h2>
+    <p>Ingrese los datos del video juego.</p>
+
+
+    <form method="POST" action="agregar.php" enctype="multipart/form-data">
+        <label>Formato</label>
+        <input type="text" name="formato" placeholder="formato" required>
+        <label>Marca</label>
+        <input type="text" name="marca" placeholder="Marca" required>
+        <label>Plataforma</label>
+        <input type="text" name="plataforma" placeholder="plataforma" required>
+        <label>Juego</label>
+        <input type="text" name="juego" placeholder="juego" required>
+        <label>Descripcion</label>
+        <input type="text" name="descripcion" placeholder="descripcion" required>
+        <label>Genero</label>
+        <input type="text" name="genero" placeholder="genero" required>
+        <label>Precio</label>
+        <input type="text" name="precio" placeholder="precio" required>
+        <label>Imagen</label>
+        <input type="file" name="imagen" placeholder="imagen">
+        <input type="submit" name="submit" value="Ingresar">
+    </form>
+
+
+</body>
+</html>
